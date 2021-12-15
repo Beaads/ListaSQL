@@ -53,12 +53,6 @@ CREATE TABLE obra_exposicao (
                                 idExposicao INT
 );
 
-CREATE TABLE venda_obra (
-                            precoVenda int NOT NULL REFERENCES venda(precoVenda),
-                            precoCompra int NOT NULL REFERENCES obra(precoCompra)
-);
-
-
 
 INSERT INTO cliente (id, nome, rg, cpf, telefone, idEndereco) VALUES (
                 '1', 'Beatriz', '6.302.942', '105.344.229-77', '999852918',1);
